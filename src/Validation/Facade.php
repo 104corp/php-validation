@@ -48,7 +48,6 @@ abstract class Facade
      * @param string $validator Validation name
      * @param mixed $value
      * @param Exception $exception
-     * @throws Exception
      */
     public static function assert($validator, $value, Exception $exception)
     {
