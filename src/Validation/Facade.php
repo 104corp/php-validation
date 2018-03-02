@@ -20,7 +20,7 @@ abstract class Facade
      * @param mixed $value
      * @return bool
      */
-    public static function isValid($validator, $value): bool
+    public static function isValid($validator, $value)
     {
         if (!class_exists($validator)) {
             throw new InvalidValidatorException('Unknown Validation: ' . $validator);

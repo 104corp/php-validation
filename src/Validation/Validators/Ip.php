@@ -9,7 +9,7 @@ use Corp104\Validation\ValidatorInterface;
  */
 class Ip implements ValidatorInterface
 {
-    public function isValid($value): bool
+    public function isValid($value)
     {
         if (!\is_string($value)) {
             return false;

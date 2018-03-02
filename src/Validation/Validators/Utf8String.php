@@ -10,7 +10,7 @@ use Corp104\Validation\ValidatorInterface;
  */
 class Utf8String implements ValidatorInterface
 {
-    public function isValid($value): bool
+    public function isValid($value)
     {
         if (!Facade::isValid(StringType::class, $value)) {
             return false;

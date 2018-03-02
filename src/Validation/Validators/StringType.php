@@ -9,7 +9,7 @@ use Corp104\Validation\ValidatorInterface;
  */
 class StringType implements ValidatorInterface
 {
-    public function isValid($value): bool
+    public function isValid($value)
     {
         return \is_string($value);
     }
