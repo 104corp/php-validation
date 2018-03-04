@@ -1,6 +1,7 @@
 # Validation
 
 [![Build Status](https://travis-ci.org/104corp/php-validation.svg)](https://travis-ci.org/104corp/php-validation)
+[![codecov](https://codecov.io/gh/104corp/php-validation/branch/master/graph/badge.svg)](https://codecov.io/gh/104corp/php-validation)
 [![Latest Stable Version](https://poser.pugx.org/104corp/validation/v/stable)](https://packagist.org/packages/104corp/validation)
 [![Total Downloads](https://poser.pugx.org/104corp/validation/d/total.svg)](https://packagist.org/packages/104corp/validation)
 [![License](https://poser.pugx.org/104corp/validation/license)](https://packagist.org/packages/104corp/validation)
