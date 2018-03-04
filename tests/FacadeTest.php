@@ -19,8 +19,7 @@ class FacadeTest extends TestCase
      */
     public function shouldThrowInvalidValidatorExceptionWhenGivenUnknownClass()
     {
-        $this->expectException(InvalidValidatorException::class);
-        $this->expectExceptionMessage('unknown');
+        $this->setExpectedException(InvalidValidatorException::class, 'unknown');
 
         Facade::isValid('unknown', 'some-value');
     }
@@ -30,7 +29,7 @@ class FacadeTest extends TestCase
      */
     public function shouldThrowInvalidValidatorExceptionWhenGivenClassNotInstanceOfValidatorInterface()
     {
-        $this->expectException(InvalidValidatorException::class);
+        $this->setExpectedException(InvalidValidatorException::class);
 
         Facade::isValid(stdClass::class, 'some-value');
     }
@@ -58,8 +57,7 @@ class FacadeTest extends TestCase
         $message = 'Some message';
         $exception = new InvalidArgumentException($message);
 
-        $this->expectException(InvalidArgumentException::class);
-        $this->expectExceptionMessage($message);
+        $this->setExpectedException(InvalidArgumentException::class, $message);
 
         Facade::assert($validator, $value, $exception);
     }

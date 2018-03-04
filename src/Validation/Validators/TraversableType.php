@@ -9,7 +9,7 @@ use Corp104\Validation\ValidatorInterface;
  */
 class TraversableType implements ValidatorInterface
 {
-    public function isValid($value): bool
+    public function isValid($value)
     {
         return \is_array($value) || $value instanceof \Traversable;
     }

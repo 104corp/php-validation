@@ -26,7 +26,7 @@ class TraversableTypeTest extends TestCase
     {
         return [
             [true, []],
-            [true, $this->createMock(Traversable::class)],
+            [true, $this->getMockBuilder(Traversable::class)->getMock()],
             [false, ''],
             [false, 'abc'],
             [false, '中文'],
