@@ -23,13 +23,16 @@ class Base64StringTest extends TestCase
     public function getCases()
     {
         return [
+            [true, base64_encode('wtf')],
+
             [false, null],
             [false, new \stdClass()],
             [false, []],
             [false, 3.14],
             [false, 0],
+            [false, ''],
+            [false, "\0"],
             [false, 'wtf'],
-            [true, base64_encode('wtf')],
         ];
     }
 }

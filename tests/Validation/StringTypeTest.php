@@ -28,6 +28,7 @@ class StringTypeTest extends TestCase
             [true, 'abc'],
             [true, '中文'],
             [true, mb_convert_encoding('這是 BIG-5 字串', 'BIG-5')],
+
             [false, 123],
             [false, null],
             [false, []],

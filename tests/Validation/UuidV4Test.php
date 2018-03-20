@@ -23,13 +23,16 @@ class UuidV4Test extends TestCase
     public function getCases()
     {
         return [
+            [true, '9a8d02af-4c9e-4d49-bb2d-3472db6b3d37'],
+
             [false, null],
             [false, new \stdClass()],
             [false, []],
             [false, 3.14],
             [false, 0],
+            [false, ''],
+            [false, "\0"],
             [false, 'invalid'],
-            [true, '9a8d02af-4c9e-4d49-bb2d-3472db6b3d37'],
         ];
     }
 }

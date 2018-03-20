@@ -27,6 +27,7 @@ class Utf8StringTest extends TestCase
             [true, ''],
             [true, 'abc'],
             [true, '中文'],
+
             [false, mb_convert_encoding('這是 BIG-5 字串', 'BIG-5')],
             [false, 123],
             [false, null],
