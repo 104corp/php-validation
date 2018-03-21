@@ -33,6 +33,7 @@ class UuidV4Test extends TestCase
             [false, ''],
             [false, "\0"],
             [false, 'invalid'],
+            [false, '9a8d02af-4c9e-4d49-bb2d-3472db6b3d37WTF'],
         ];
     }
 }
